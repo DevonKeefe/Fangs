@@ -1,68 +1,97 @@
 body {
-    background-image: url('./Images/background.png');
-    background-size: cover;
-    background-position: 40% center;
+  background-image: url('./Images/background.png');
+  background-size: cover;
+  background-position: 40% center;
+  margin: 0;
+  padding: 0;
 }
+
 h1 {
-    text-transform: uppercase;
-    font-size: 5rem;
-}
-
-.format {
-      width: 50%;
-      margin-left: 25%;
-      margin-top: 75px;
-      color: yellow;
-      font-family: "Amatic SC", sans-serif; 
-      text-align: center;
-}
-
-.quote {
-width: 50%;
-      margin-left: 25%;
-      margin-top: 75px;
-      font-size: 50px;
-      color:white;
-      background-color: black;
-      font-family: "Amatic SC", sans-serif; 
-      text-align: center;
-      border-radius: 20px;
-      padding: 20px;
-      border: 2px solid white;
-
-}
-.fang {
-    border: 2px solid white;
-    width: 100%;
-}
-
-.format2 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
-
-}
-
-.fang2 {
-    width: 600px;
-    border: 2px solid white;
-   
+  text-transform: uppercase;
+  font-size: 5rem;
 }
 
 .title {
   color: yellow;
+  background-color: darkred;
+  border-color: black;
   font-size: 100px;
   text-align: center;
   margin-top: 30px;
-  font-family: "Amatic SC", cursive; /* Or any font you prefer */
+  font-family: "Amatic SC", cursive;
+}
+
+.format {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  position: relative; /* enables positioning of text on top of image */
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+}
+
+.fang {
+  border: 2px solid white;
+  width: 100%;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  color: yellow;
+  font-size: 2.5rem;
+  font-family: "Amatic SC", sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  max-width: 40%;
+  text-align: right;
+}
+
+.quote {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  font-size: 50px;
+  color: yellow;
+  background-color: black;
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+.format2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.fang2 {
+  width: 600px;
+  border: 2px solid white;
 }
 
 .buy {
-    color: yellow;
-    font-size: 4rem;
-    text-align: center;
+  color: yellow;
+  font-size: 4rem;
+  text-align: center;
 }
+
 .footer {
-    color: white;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.music-player {
+  text-align: center;
+  margin-top: 30px;
 }
